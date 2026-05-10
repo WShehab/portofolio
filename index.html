@@ -751,6 +751,31 @@ a.project-card {
   border: 1px solid var(--border);
 }
 
+.project-links {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem var(--space-lg) var(--space-sm);
+  border-top: 1px solid var(--border);
+}
+
+.project-link-btn {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: var(--bg-elevated);
+}
+
+.project-link-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 
 .contact {
   background: var(--bg-elevated);
@@ -1122,7 +1147,7 @@ footer p {
   <div class="container">
     <div class="section-header">
       <span class="section-number">04</span>
-      <h2>Selected Work (you can click on each project to view its github repository)</h2>
+      <h2>Selected Work (you can click on each card to view its github repository)</h2>
       <p>Projects that represent what I do best.</p>
     </div>
     <div class="projects-grid">
@@ -1156,7 +1181,7 @@ footer p {
           <span class="project-tech">Python</span>
         </div>
       </a>
-      <a href=https://wshehab.github.io/kite-dashboard/ target="_blank" rel="noopener noreferrer" class="project-card">
+      <div class="project-card">
         <div class="project-header">
           <div class="project-meta">
             <span class="project-type">Web Frontend</span>
@@ -1170,7 +1195,11 @@ footer p {
           <span class="project-tech">CSS</span>
           <span class="project-tech">JavaScript</span>
         </div>
-      </a>
+        <div class="project-links">
+          <a href="https://wshehab.github.io/kite-dashboard/" target="_blank" rel="noopener noreferrer" class="project-link-btn">↗ Live Site</a>
+          <a href="https://github.com/WShehab/kite-dashboard" target="_blank" rel="noopener noreferrer" class="project-link-btn">⌥ GitHub</a>
+        </div>
+      </div>
       <a href=https://github.com/WShehab/multi-language-release-pipeline target="_blank" rel="noopener noreferrer" class="project-card">
         <div class="project-header">
           <div class="project-meta">
